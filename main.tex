@@ -1,0 +1,288 @@
+\documentclass[a4paper,12pt]{book}
+\usepackage{graphicx} % For graphics
+\usepackage{hyperref} % For hyperlinks
+\usepackage{makeidx} % For making an index
+\usepackage{tikz}
+
+% ... (rest of your preamble)
+
+\makeindex % Command to make the index
+
+\begin{document}
+
+% --- Book Cover ---
+\begin{titlepage}
+    \begin{tikzpicture}[remember picture, overlay]
+        % Background color
+        \fill[cyan!30] (current page.south west) rectangle (current page.north east);
+
+        % Decorative Circles Pattern at the bottom
+        \foreach \i in {0,...,36}
+        {
+            \fill[cyan!40, rotate around={10*\i:(current page.center)}] 
+                (current page.south) circle (1cm);
+        }
+        
+        % Title and additional info
+        \node at (current page.center) [font=\Huge, text width=0.8\textwidth, align=center] 
+            {\textbf{World History in Brief - WHiB - Version 0.1}};
+            
+        \node[align=center, font=\large] at (current page.center) 
+            [yshift=-3cm] {MIT License};
+        
+        \node[align=center, font=\large] at (current page.center) 
+            [yshift=-4.5cm] {Available on GitHub at: \\ 
+            \url{https://GitHub.com/nicholaskarlson/WHiB}};
+    \end{tikzpicture}
+\end{titlepage}
+
+
+% --- Table of Contents ---
+\tableofcontents
+\cleardoublepage
+
+% --- Preface ---
+\chapter*{Preface}
+In the journey of exploring our past and understanding our roots, "World History in Brief - WHiB - Version 0.1" aspires to be more than just another historical account. This book strives to foster collaborative history-making, breaking the traditional mold and inviting readers to be active participants. With this preface, we delve into the essence of this project, its vision, and how it strives to redefine how we view history. Note that this book has very few references. The reader is encourage to use resources available on the Web to fact check. This book's view on "causation" and facts is heavily influenced by Mosteller & Tukey \cite{mosteller1977}.
+
+% --- Chapters ---
+\chapter{Introduction to WHiB}
+\subsection*{Welcoming the World of Historical Investigation with GitHub}
+World History in Brief, abbreviated as WHiB, isn't merely a passive read. It's an endeavor to reshape how history is written and understood. By presenting an open-source approach to history, we aim to be inclusive and diverse. This introductory chapter will orient you to the ethos of WHiB, helping you comprehend its significance and how it diverges from traditional historical narrations.
+
+%... Repeat for each chapter ...
+
+\chapter{Open-Source Ethos}
+\subsection*{The Spirit of Shared Knowledge and Collaboration}
+History, like software, is better when it's open. Drawing inspiration from the open-source software movement, this section elucidates how a collaborative, transparent, and shared approach can enhance our understanding of history. Here, we unravel the philosophy behind open-source and how it beautifully marries with the study of our past.
+
+\chapter{Introduction to GitHub}
+\subsection*{The Hub for Modern Collaboration}
+At the heart of our collaborative historical endeavor lies GitHub, a platform traditionally associated with code but now repurposed for our narrative. This section provides a primer on GitHub, laying the foundation for those unfamiliar and offering insights into its transformative potential for collective history writing.
+
+\chapter{Encouragement to Fork}
+\subsection*{Invitation to Dive Deep and Make It Your Own}
+WHiB isn't a static entity. It thrives on evolution, adaptation, and diversification, much like history itself. We encourage readers to "fork" - a term you'll soon become intimately familiar with - and create their own versions of this book. Delve into this section to understand the essence of "forking" and how it can be the starting point of your unique historical journey.
+
+\chapter{Introduction to GitHub}
+\subsection*{Discovering the Power of Collaborative Tools}
+Diving deeper into the world of GitHub, this chapter provides a comprehensive overview. Beyond its technicalities, we explore how GitHub emerged as a revolutionary platform for collaboration and how it can be leveraged for historical research and narrative building.
+
+\chapter{Forking Process}
+\subsection*{The Heart of Collaboration on GitHub}
+The beauty of open-source lies in its democratization of content creation. In this section, we demystify the process of "forking" on GitHub, guiding you step-by-step on how to take WHiB and create a version uniquely yours.
+
+\chapter{Editing and Customizing}
+\subsection*{Tailoring Repositories to Suit Your Needs}
+Building upon the forking process, this segment delves into the next steps. How can you edit and customize your version of WHiB? What tools and techniques are available at your disposal? Embark on this informative journey as we guide you through the intricacies of editing on GitHub.
+
+\chapter{Engaging with the Community}
+\subsection*{Joining the Global Conversation}
+GitHub is not just a platform; it's a thriving community. Engaging with fellow historians, enthusiasts, and curious minds can amplify the depth and breadth of your historical perspective. This section provides insights into community engagement, from discussions and debates to collaborative content creation.
+
+\chapter{Crafting Your Own Historical Narrative}
+\subsection*{Blending Past Stories with Modern Technology}
+Your perspective matters. History isn't just about past events but how we interpret and present them. This section empowers you with the tools and knowledge to craft your unique narrative, ensuring that history is not just read, but lived and experienced.
+
+\chapter{Troubleshooting Common GitHub Pitfalls}
+\subsection*{Finding Your Way Out of Hiccups}
+Every platform has its learning curve, and GitHub is no exception. This segment aims to ease your journey by addressing common challenges users face on GitHub. From resolving merge conflicts to understanding pull requests, we've got you covered.
+
+\chapter{Dawn of Hominins}
+\subsection*{The Early Steps in Human Evolution}
+Tracing our lineage back to the very beginning, this chapter dives into the world of hominins. Before Homo sapiens dominated the landscape, several hominin species walked the Earth. Embark on a journey millions of years back in time as we explore our most ancient ancestors.
+
+\chapter{Early Human History Key Discoveries}
+\subsection*{Landmark Finds that Shaped Our Understanding}
+The story of hominins is told through fragments - bones, tools, and fossilized footprints. Each discovery adds a piece to the puzzle of our past. This section highlights the groundbreaking discoveries that have reshaped our understanding of early human history.
+
+\chapter{Evolutionary Path}
+\subsection*{Tracing the Journey of Early Humanoids}
+From the first bipedal steps to the emergence of complex cognitive functions, the evolutionary path of hominins is a tale of adaptation, survival, and innovation. Dive into the intricacies of our evolutionary journey and discover the milestones that have defined us.
+
+\chapter{Hominin Homo Erectus}
+\subsection*{The Emergence of a New Kind of Hominin}
+Hominin Homo Erectus stands as a sentinel in the story of human evolution, marking significant strides in our developmental journey. As we delve into this chapter, we'll explore the emergence of this species, its distinct characteristics, and how it set the stage for subsequent human evolution.
+
+\chapter{Hominin Migrations and Discoveries}
+\subsection*{Walking the Earth and Leaving Marks}
+The wanderlust of Homo Erectus took them far and wide, making them the first of our ancestors to truly explore the world. Unearth the fascinating evidence of their migrations, the lands they conquered, and the traces they left behind for us to discover.
+
+\chapter{Importance in Evolution}
+\subsection*{The Crucial Role of Hominin Homo Erectus in Our Past}
+The evolutionary significance of the Hominin, Homo Erectus, cannot be understated. Here, we'll dissect their critical role in the grand tapestry of human evolution, from their survival strategies to their cognitive leaps, painting a vivid picture of their transformative influence.
+
+\chapter{The Neanderthals}
+\subsection*{Our Closest Extinct Relatives}
+Often misunderstood and shrouded in myth, the Neanderthals were much more than just 'cave people'. Journey with us as we dive deep into the world of these close relatives, understanding their culture, beliefs, and the world they inhabited.
+
+\chapter{Neanderthal Coexistence with Homo Sapiens}
+\subsection*{Sharing the World with Modern Humans}
+The narrative of Neanderthals and Homo sapiens isn't just about difference, but also about intersections. Unravel the entwined destinies of these two species, exploring periods of coexistence, mutual learning, and shared history.
+
+\chapter{Neanderthal Extinction Theories}
+\subsection*{Exploring the Reasons Behind Neanderthal Disappearance}
+The disappearance of Neanderthals remains one of history's enduring mysteries. Venture into the realm of scientific speculation and solid theories as we piece together the puzzle of their extinction.
+
+\chapter{Emergence of Homo Sapiens}
+\subsection*{The Rise of Modern Humans}
+Enter the epoch of us - Homo sapiens. Charting our own rise, this chapter offers a mirror to our earliest reflections, our triumphs, challenges, and the evolutionary quirks that make us uniquely human.
+
+\chapter{Global Migration of Homo Sapiens}
+\subsection*{Spreading Across the Continents}
+The innate desire to explore has always been a hallmark of our species. Track the grand migrations of early Homo sapiens as they ventured out of Africa, colonizing every conceivable habitat, from icy tundras to arid deserts.
+
+\chapter{Cognitive Revolution}
+\subsection*{The Leap in Thought and Culture}
+A spark in the human mind led to a firestorm of innovation. Dive into the cognitive revolution that endowed Homo sapiens with unprecedented abilities of abstract thought, planning, and complex communication.
+
+\chapter{Art, Culture, and Social Structures}
+\subsection*{The Rich Tapestry of Early Homo Sapiens Life}
+Beyond mere survival, Homo sapiens sought meaning, expression, and connection. Explore the blossoming of early art, the birth of diverse cultures, and the intricate social structures that became the bedrock of human societies.
+
+
+
+\chapter{Defining Civilization}
+\subsection*{What Makes a Society Advanced?}
+What makes a group of people a 'civilization'? Delve into the core attributes that define a civilization, from urban centers and written language to complex socio-political structures.
+
+
+\chapter{First Civilizations}
+\subsection*{The Dawn of Structured Societies}
+The dawn of civilization marked a pivotal shift in the human story. From nomadic tribes to settled societies, witness the birth of our first great civilizations and the profound legacies they left behind.
+
+
+\chapter{Sumerians, Egyptians, Indus Valley}
+\subsection*{Pioneers of Civilization}
+Embark on a journey through time, visiting the cradles of early civilizations. From the fertile crescent of the Sumerians and the majestic Nile of the Egyptians to the mysterious cities of the Indus Valley, explore their enduring contributions and mysteries.
+
+\chapter{Greek and Roman Epochs}
+\subsection*{Two Titans of the Ancient World}
+Two of antiquity's most influential empires come to life in this chapter. Venture into the world of ancient Greece and Rome, uncovering their philosophies, wars, innovations, and the echoes of their civilizations that still resonate today.
+
+\chapter{Rise of City-States}
+\subsection*{The Power of Urban Centers in Antiquity}
+The ancient Greek world was a tapestry of fiercely independent city-states. Dive into the intricacies of this fragmented landscape, with a special focus on Athens, the cradle of democracy and a beacon of ancient art and thought.
+
+\chapter{Philosophy, Arts, and the Greek Spirit}
+\subsection*{The Flourishing of Thought and Creativity}
+The Greek spirit was one of inquiry, reflection, and boundless creativity. Explore the luminous minds that shaped Western philosophy, the artists who redefined beauty, and the indomitable spirit that continues to inspire today.
+
+\chapter{Roman Republic and Empire}
+\subsection*{From City-State to World Superpower}
+From a small settlement on the banks of the Tiber, Rome grew to dominate the known world. Chart the rise and transformation of Rome from a republic to an empire, understanding its politics, society, and the forces that drove its expansion.
+
+\chapter{Roman Achievements, Decline, and Legacy}
+\subsection*{The Enduring Impact of Rome}
+The sun eventually set on the Roman Empire, but not before it left an indelible mark on history. Delve into the monumental achievements of Rome, the reasons behind its decline, and the enduring legacy it bequeathed to posterity.
+
+\chapter{The Medieval Mosaic}
+\subsection*{The Diverse Middle Ages}
+The medieval era, often referred to as the Middle Ages, was a period of profound transformation. Amidst a backdrop of chivalry, castles, and cathedrals, humanity grappled with both progress and strife. Delve into the intricacies of this multifaceted era, which bridged the ancient and modern worlds.
+
+\chapter{Feudalism and Manorialism}
+\subsection*{Structures of Medieval Society}
+Discover the societal and economic structures that underpinned medieval life. Feudalism, with its intricate web of loyalties, and manorialism, shaping the rural life of the era, played pivotal roles in the development of medieval European society.
+
+\chapter{Religion, Monasticism, and the Church}
+\subsection*{Spiritual Forces of the Middle Ages}
+Religion was the cornerstone of medieval life. Explore the towering influence of the Church, the spiritual allure of monasticism, and the interplay between faith, politics, and daily life during these times.
+
+\chapter{Key Dynasties and Kingdoms}
+\subsection*{Rulers and Realms that Shaped the Medieval World}
+The medieval world was a chessboard of dynasties and kingdoms, each vying for power and influence. Journey through the corridors of time to meet the iconic rulers, witness legendary battles, and understand the geopolitical shifts of the era.
+
+\chapter{Trade, Exploration, and Interactions}
+\subsection*{The Interconnected Medieval World}
+Beyond the shadow of castles lay a world of bustling markets, long voyages, and cultural exchanges. Unravel the intricate trade networks, the brave explorations, and the fruitful interactions that colored the medieval world.
+
+\chapter{The Renaissance Rebirth}
+\subsection*{A New Dawn of Thought and Art}
+A dawn of new ideas, art, and knowledge broke upon Europe, heralding the Renaissance. Delve into this luminous period, where humanity emerged from medieval constraints to embrace innovation, curiosity, and a rejuvenation of culture.
+
+\chapter{Renaissance Definition and Origins}
+\subsection*{Roots of the Renaissance}
+But what truly defines the Renaissance? Embark on a journey to understand the roots of this movement, its defining ethos, and the societal shifts that ignited this golden age of rediscovery.
+
+\chapter{Art, Science, and the Humanities}
+\subsection*{The Pillars of the Renaissance}
+The Renaissance witnessed the blossoming of genius. From the masterstrokes of Leonardo and Michelangelo to the revolutionary ideas of Copernicus and Galileo, explore the titans who shaped this era and their indelible contributions.
+
+\chapter{Printing Revolution}
+\subsection*{The Technology that Changed the World}
+The invention of the printing press was a catalyst that transformed society. Dive into the story of how this revolutionary technology democratized knowledge, reshaped cultures, and ushered in a new age of mass communication.
+
+\chapter{USA History and the Industrial Revolution}
+\subsection*{From Colonies to Industry Leader}
+As the USA charted its unique path, the world was on the cusp of another profound transformation: the Industrial Revolution. Discover the intertwining narratives of a fledgling nation's quest for identity and the mechanical innovations reshaping the global landscape.
+
+\chapter{Industrial Revolution Precursors and Causes}
+\subsection*{The Catalysts of Industrial Change}
+What lit the furnace of the Industrial Revolution? Delve into the antecedents that set the stage for this unprecedented era of progress, from socio-economic factors to groundbreaking discoveries.
+
+\chapter{Key Innovations and Societal Impacts}
+\subsection*{The Machines and Ideas that Reshaped Society}
+Steam engines, mechanized looms, and railways—these weren't just inventions but forces that realigned civilizations. Explore the seminal innovations of the Industrial Revolution and their far-reaching societal consequences.
+
+\chapter{Urbanization and Modern Business}
+\subsection*{New Ways of Living and Doing Business}
+As factories rose, so did cities. Dive into the story of rapid urbanization, the rise of a new economic order, and the challenges and opportunities that a free market system for business brought to the fore.
+
+\chapter{Modern History, 1865 and Beyond}
+\subsection*{The World in the Recent Past}
+From the age of empires to the digital era, modern history from 1865 and beyond has been a whirlwind of change. Embark on a journey that traverses wars, revolutions, and innovations, painting a tapestry of the contemporary world and its myriad complexities.
+
+\chapter{World Wars and Global Repercussions}
+\subsection*{The Conflicts that Reshaped the World}
+The tremors of the World Wars were felt across continents, reshaping boundaries and destinies. Delve deep into the causes, the brutal conflicts, and the lasting repercussions of these global confrontations.
+
+\chapter{The Cold War and the Fall of the Soviet Union}
+\subsection*{New World Orders}
+The tussle between superpowers and the quest for self-determination marked the latter half of the 20th century. Understand the intrigues of the Cold War and the fall of the Soviet Union that redrew the world map.
+
+\chapter{Technological Revolutions}
+\subsection*{Innovations Driving the Modern Era}
+The silicon chip, the internet, and the smartphone—modern life is a testament to technological marvels. Explore the innovations that catapulted us into the digital age and their profound influence on every facet of our lives.
+
+\chapter{Ancient Chinese History}
+\subsection*{The Dragon's Ancient Roots}
+Steeped in millennia of rich traditions and groundbreaking innovations, ancient China stands as a testament to human civilization's brilliance. Embark on a journey back to China's cradle, where dynasties rose and fell, philosophies were born, and cultures thrived.
+
+\chapter{Modern Chinese History}
+\subsection*{From Dynasties to the Modern State}
+From the last imperial dynasty to the emergence of the People's Republic, modern China has witnessed tumultuous change and astonishing growth. Delve into the events, personalities, and socio-political transformations that have sculpted contemporary China.
+
+\chapter{Ancient Indian History}
+\subsection*{Land of the Vedas and Indus Valley}
+The Indian subcontinent, with its diverse tapestry of cultures, religions, and languages, boasts a history as old as the Indus Valley Civilization. Discover the empires, philosophies, and artistic achievements that defined ancient India.
+
+\chapter{Modern Indian History}
+\subsection*{From the Raj to the World's Largest Democracy}
+Chart the trajectory from the Mughal Empire's zenith to the rise of British colonialism and, ultimately, India's tryst with destiny. Explore the challenges, revolutions, and renaissance that have shaped modern India's unique identity.
+
+
+% --- Appendices ---
+\appendix
+\chapter{Basic GitHub Guide}
+A Quick Start to Your GitHub Journey is next.
+
+Dive into the digital realm of GitHub, the world's leading platform for collaborative projects. This guide will offer you the foundational steps to navigate, contribute to, and benefit from the vast universe of open-source collaboration.
+
+\chapter{Basic LaTeX Guide}
+A Quick Start to Your LaTeX Journey is next.
+
+Dive into the digital realm of LaTeX, a major platform for scientific and professional document creation. This guide will offer you the foundational steps to understanding and working with LaTeX to create fabulous documents, such as this book.
+
+% --- Bibliography ---
+\addcontentsline{toc}{chapter}{Bibliography}
+\bibliographystyle{plain}
+\bibliography{references} % Assuming you have a references.bib file
+
+% --- Index ---
+\addcontentsline{toc}{chapter}{Index}
+\printindex
+
+\end{document}
+
+
+

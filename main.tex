@@ -5,6 +5,9 @@
 \usepackage{tikz}
 \usepackage{amsmath}
 
+\newcommand{\inputtoc}[1]{\input{#1}}
+
+
 % ... (rest of your preamble)
 
 \makeindex % Command to make the index
@@ -390,35 +393,43 @@ A Project of Collective Wisdom
 History, in many ways, is a collective endeavor. Each era, event, or individual's account adds a thread to the vast tapestry of human experience. GitHub, with its dynamic community, offers a space where these threads can intertwine, where debates can challenge established narratives, and where collaboration can paint a more nuanced picture of the past. By engaging with this community, you don't just become a passive consumer of history; you become an active participant in its creation and interpretation.
 
 \chapter{World Population Since 1700}
-\subsection*{A Dramatic Increase Demonstrated by Example}
+\subsection*{A Dramatic Increase in World Population}
 The World has seen a dramatic increase in population since 1700. This chapter looks at a few countries and discusses whether the ideas of Malthus are relevant in today's world.
+
+\let\oldsection\section
+\renewcommand{\section}[1]{\oldsection*{#1}\addcontentsline{toc}{section}{#1}}
 
 \input{world.tex}
 
+
+
 Before we go back millions of years in time, let's take a quick look at Earth's population. The population of the world has grown exponentially, more than tripling in the 20th century alone. This growth has been uneven across different regions, influenced by factors such as industrialization, healthcare advancements, and social changes. The idea of Malthus, that population growth would eventually outstrip food production and lead to mass starvation, has not been realized on a global scale. However, pressure on natural resources and the environmental impact of such growth are pressing concerns that need to be addressed.
 
-\input{england.tex}
-\input{germany.tex}
-\input{turkey.tex}
-\input{SouthAfrica.tex}
-\input{brazil.tex}
-\input{russia.tex}
-\input{australia.tex}
-\input{korea.tex}
-\input{japan.tex}
-\input{indonesia.tex}
-\input{india.tex}
-\input{china.tex}
-\input{mexico.tex}
-\input{canada.tex}
-\input{usa.tex}
+\inputtoc{england.tex}
+\inputtoc{germany.tex}
+\inputtoc{turkey.tex}
+\inputtoc{SouthAfrica.tex}
+\inputtoc{brazil.tex}
+\inputtoc{russia.tex}
+\inputtoc{australia.tex}
+\inputtoc{korea.tex}
+\inputtoc{japan.tex}
+\inputtoc{indonesia.tex}
+\inputtoc{india.tex}
+\inputtoc{china.tex}
+\inputtoc{mexico.tex}
+\inputtoc{canada.tex}
+\inputtoc{usa.tex}
+
+\let\section\oldsection
 
 The population dynamics in the countries mentioned provide a microcosm of global trends and highlight the diversity of experiences in different parts of the world. The challenges of managing such growth are manifold, touching on issues of sustainability, environmental protection, and quality of life.  The world's population is projected to stabilize by the end of the 21st century. Whether this is true remains to be seen. Aging populations, urbanization, and a declining environment are among the key issues that will shape the future. 
 
 Before going way back to early hominins let's take a quick look at pre-modern and modern histories of countries and regions around the world. When we look at hominins, we will be looking at life on earth millions of years ago; truly ancient times. The pre-modern histories that we will now look at may feel ancient to the modern person, but in reality these times are actually quite "modern" compared life millions of years ago when hominins such as "Lucy" - The Australopithecus afarensis, roamed the earth. 
 
+\chapter{Understanding Date Formats}
 \section*{A Note about Dates}
-Dates can be confusing.
+Dates can be confusing because of different formatting conventions. How dates are commonly presented will be described in this chapter.
 
 \subsection*{Describing a Date: Examples}
 In terms of describing a date these are all the same:

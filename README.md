@@ -1,6 +1,6 @@
 # World History in Brief (WHiB)
 
-**Version**: 0.6
+**Version**: 0.7
 
 ## About
 

@@ -29,7 +29,7 @@
         
         % Title and additional info
         \node at (current page.center) [font=\Huge, text width=0.8\textwidth, align=center] 
-            {\textbf{World History in Brief - WHiB - Version 0.6}};
+            {\textbf{World History in Brief \\ WHiB - Version 0.7}};
             
         \node[align=center, font=\large] at (current page.center) 
             [yshift=-2.5cm] {\today}; % <- This is the compilation date
@@ -2774,10 +2774,6 @@ The luminosity of Greek philosophy, arts, and the unbreakable spirit has left an
 \subsection*{From City-State to World Superpower}
 From a small settlement on the banks of the Tiber, Rome grew to dominate the known world. Chart the rise and transformation of Rome from a republic to an empire, understanding its politics, society, and the forces that drove its expansion.
 
-\chapter{Roman Republic and Empire}
-\subsection*{From City-State to World Superpower}
-From a small settlement on the banks of the Tiber, Rome grew to dominate the known world. Chart the rise and transformation of Rome from a republic to an empire, understanding its politics, society, and the forces that drove its expansion.
-
 \section*{The Roman Republic: Foundations of Power}
 
 \paragraph{The Roman Senate and Popular Assemblies:}
@@ -3621,10 +3617,27 @@ The technological revolutions of the silicon chip, the internet, and the smartph
 \input{MajorWorldEconomicEvents.tex}
 
 % --- Appendices ---
-\appendix
+%\appendix
+%\chapter{Basic GitHub Guide}
+%\section*{A Quick Start to Your GitHub Journey}
 
+%start new
+% --- Appendices ---
+\clearpage
+\addcontentsline{toc}{chapter}{Appendices}
+\appendix
+\renewcommand{\thechapter}{\roman{chapter}} % Ensuring chapters are numbered as i, ii, iii, etc.
+%end new
+
+
+
+
+
+
+%\appendix
 \chapter{Basic GitHub Guide}
 \section*{A Quick Start to Your GitHub Journey}
+
 
 Welcome to the fascinating world of GitHub, a platform that has revolutionized the way we collaborate on projects, share code, and build software together. Whether you are a programmer, a writer, or a historian, GitHub provides a set of powerful tools to help you collaborate with others, manage your projects, and contribute to the vast world of open-source software. In this guide, we will walk you through the foundational steps to get started with GitHub, helping you to navigate, contribute, and make the most out of this incredible platform.
 

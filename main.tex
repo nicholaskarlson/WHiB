@@ -1,7 +1,7 @@
 \documentclass[a4paper,12pt]{book}
 \usepackage{graphicx} % For graphics
 \usepackage{hyperref} % For hyperlinks
-\usepackage{makeidx} % For making an index
+% \usepackage{makeidx} % For making an index
 \usepackage{tikz}
 \usepackage{amsmath}
 
@@ -9,7 +9,7 @@
 
 % ... (rest of your preamble)
 
-\makeindex % Command to make the index
+% \makeindex % Command to make the index
 
 \begin{document}
 
@@ -28,7 +28,7 @@
         
         % Title and additional info
         \node at (current page.center) [font=\Huge, text width=0.8\textwidth, align=center] 
-            {\textbf{World History in Brief with GitHub and \LaTeX  \\ WHiB - Version 0.94}};
+            {\textbf{World History in Brief with GitHub and \LaTeX  \\ WHiB - Version 0.95}};
             
         \node[align=center, font=\large] at (current page.center) 
             [yshift=-2.5cm] {\today}; % <- This is the compilation date
@@ -42,15 +42,14 @@
     \end{tikzpicture}
 \end{titlepage}
 
-
-
 % --- Table of Contents ---
 \tableofcontents
 \cleardoublepage
 
 % --- Preface ---
 \chapter*{Preface}
-In exploring our past and understanding our roots, \emph{World History in Brief - WHiB - Version x.x} aspires to be more than just another historical account. This book strives to foster collaborative history-making, breaking the traditional mold and inviting readers to be active participants. With this preface, we delve into the essence of this project, its vision, and how it strives to redefine how we view history. Note that this book has very few references. The reader is encouraged to use resources available on the Web to fact-check. This book's view on ``causation'' and facts is heavily influenced by Mosteller and Tukey \cite{mosteller1977}.
+\addcontentsline{toc}{chapter}{Preface}
+In exploring our past and understanding our roots, \emph{World History in Brief - WHiB - Version 1.0} aspires to be more than just another historical account. This book strives to foster collaborative history-making, breaking the traditional mold and inviting readers to be active participants. With this preface, we delve into the essence of this project, its vision, and how it strives to redefine how we view history. Note that this book has very few references. The reader is encouraged to use resources available on the Web to fact-check. This book's view on ``causation'' and facts is heavily influenced by Mosteller and Tukey \cite{mosteller1977}.
 
 \section*{Redefining the Role of the Reader}
 Historical narratives have traditionally been written in a didactic manner; historians present their research, analysis, and conclusions with an authoritative tone. In these setups, readers play a passive role, absorbing the information and accepting the narratives before them. WHiB challenges this norm, emphasizing that every reader brings a unique perspective and may choose different facts to include if the reader were writing the book. By transforming readers from passive consumers to potentially active participants, the history presented in WHiB can become a collaborative, living, breathing entity, evolving with each reader's input and insights.
@@ -361,7 +360,7 @@ GitHub's ecosystem is rich with tools and extensions to enhance your editing exp
 \end{itemize}
 
 \subsection*{Conclusion: The Art of Tailored Content}
-Editing and customizing on GitHub might seem daunting initially, but with practice, it transforms into a manageable workflow. Many people find that the ability to take a project like WHiB and mold it into something uniquely yours is empowering. It's a testament to the open-source community's ethos, where shared knowledge becomes the canvas and our collective edits, the brushstrokes, crafting an ever-evolving masterpiece. As you embark on your customization journey, remember that every edit, no matter how small, contributes to the project potentially in significant ways.
+Editing and customizing on GitHub might seem daunting initially, but with practice, it transforms into a manageable workflow. Many people find that the ability to take a project like WHiB and mold it into something uniquely theirs is empowering. It's a testament to the open-source community's ethos, where shared knowledge becomes the canvas and our collective edits, the brushstrokes, crafting an ever-evolving masterpiece. As you embark on your customization journey, remember that every edit, no matter how small, contributes to the project potentially in significant ways.
 
 \chapter{Engaging with the Community}
 \section*{Joining the Global Conversation}
@@ -668,7 +667,7 @@ In terms of describing a date, these two sentences are both the same:
 \end{itemize}
 
 \subsection*{The History of Date Nomenclature: Understanding BC, AD, BCE, and CE}
-Date nomenclature has been a crucial aspect of historical studies, helping scholars, researchers, and the general public to navigate through time and understand the chronology of events. The terms BC, AD, BCE, and CE are central to this nomenclature, each carrying specific meanings and implications. In this essay, we will delve into the history of these terms, their meanings, and how to interpret them.
+Date nomenclature has been a crucial aspect of historical studies, helping scholars, researchers, and the general public to navigate through time and understand the chronology of events. The terms BC, AD, BCE, and CE are central to this nomenclature, each carrying specific meanings and implications. In this chapter, we will delve into the history of these terms, their meanings, and how to interpret them.
 
 \subsubsection*{BC and AD: The Christian Calendar}
 \paragraph{BC: Before Christ}
@@ -1643,7 +1642,7 @@ The 1980s saw the introduction of policies like Glasnost and Perestroika, increa
 \subsection{Declaration of Independence and Early Years}
 Ukraine declared independence on August 24, 1991. Economic difficulties and political instability marked the early years of independence.
 
-\subsection{Orange Revolution and EuroMaidan}
+\subsection{Orange Revolution and Euromaidan}
 In 2004, the Orange Revolution unfolded, driven by demands for democratic reforms and resistance to corrupt practices. A decade later, the Euromaidan protests, spanning from November 2013 to February 2014, led to significant political changes and the annexation of Crimea by Russia in March 2014.
 
 \subsection{Conflict in Eastern Ukraine and Ongoing Challenges}
@@ -1678,6 +1677,15 @@ Ancient Greece, considered the cradle of Western civilization, was the birthplac
 
 \subsection{Roman Empire (27 BCE – 476 CE)}
 Following the Roman Republic, the Roman Empire was established in 27 BCE, marking the start of a period of unparalleled influence in art, politics, and warfare. The empire expanded across Europe, Asia, and Africa, bringing about relative stability and prosperity known as the Pax Romana.
+
+\paragraph{The Division of the Empire:}
+In AD 395, the Roman Empire was divided into the Western Roman Empire and the Eastern Roman Empire, also known as Byzantium, with its capital in Constantinople (modern-day Istanbul).
+
+\paragraph{Byzantium’s Endurance:}
+While the Western Roman Empire fell in AD 476, Byzantium endured for nearly another millennium, serving as a bastion of classical knowledge and Christian faith.
+
+\paragraph{The Fall of Constantinople:}
+In 1453, Constantinople fell to the Ottoman Turks, marking the end of the Byzantine Empire. This event played a significant role in the shift of power and culture in the region. Following the fall of Byzantium, the Ottoman Empire emerged as a major power, with Istanbul at its heart, continuing the city’s legacy as a cultural and economic hub.
 
 \section{Medieval Europe}
 \label{sec:medieval-europe}
@@ -1730,7 +1738,7 @@ European powers expanded their empires, colonizing vast territories in Africa, A
 \section{The World Wars}
 \label{sec:world-wars}
 \subsection{World War I (1914–1918)}
-Also known as the Great War, World War I was a global conflict originating in Europe, involving most of the world’s nations. It resulted in significant political change and the redrawing of European borders.
+Also known as the Great War, World War I was a global conflict originating in Europe, involving many of the world’s nations. It resulted in significant political change and the redrawing of European borders.
 
 \subsection{World War II (1939–1945)}
 World War II was the deadliest conflict in human history, involving over 30 countries and resulting in significant loss of life and the devastation of Europe. The war ended with the emergence of the United States and the Soviet Union as superpowers.
@@ -2287,7 +2295,7 @@ The 1990s experienced a strong economy and the rise of the internet, culminating
 \label{sec:21st-century}
 \subsection{September 11 Attacks (2001)}
 \label{subsec:september-11-attacks}
-The terrorist attacks on September 11, 2001, had profound impacts on U.S. domestic and foreign policy.
+The terrorist attacks on September 11, 2001, had a profound impact on U.S. domestic and foreign policy.
 
 \subsection{Great Recession (2007–2009)}
 \label{subsec:great-recession}
@@ -2385,79 +2393,79 @@ The evolutionary journey of hominins is a saga marked by remarkable adaptability
 
 \chapter{Hominin Homo Erectus}
 \subsection*{The Emergence of a New Kind of Hominin}
-Hominin Homo Erectus stands as a sentinel in the story of human evolution, marking significant strides in our developmental journey. As we delve into this chapter, we'll explore the emergence of this species, its distinct characteristics, and how it set the stage for subsequent human evolution.
+Hominin Homo erectus stands as a sentinel in the story of human evolution, marking significant strides in our developmental journey. As we delve into this chapter, we'll explore the emergence of this species, its distinct characteristics, and how it set the stage for subsequent human evolution.
 
 \section*{Origins and Distribution}
 
 \paragraph{African Beginnings:}
-Homo Erectus first appeared on the African continent around 1.9 million years ago. This species showcased a significant increase in brain size and a robust build adapted to the challenges of a savannah habitat.
+Homo erectus first appeared on the African continent around 1.9 million years ago. This species showcased a significant increase in brain size and a robust build adapted to the challenges of a savannah habitat.
 
 \paragraph{Global Travelers:}
-Remarkably, Homo Erectus was one of the first hominins to venture out of Africa, with evidence of their presence found in Asia and Europe. Their ability to adapt to diverse environments speaks to their versatility and resilience.
+Remarkably, Homo erectus was one of the first hominins to venture out of Africa, with evidence of their presence found in Asia and Europe. Their ability to adapt to diverse environments speaks to their versatility and resilience.
 
 \section*{Anatomical and Behavioral Characteristics}
 
 \paragraph{Standing Tall:}
-Homo Erectus stood upright with a posture similar to modern humans. This bipedal locomotion freed up their hands, enabling the use of more sophisticated tools.
+Homo erectus stood upright with a posture similar to modern humans. This bipedal locomotion freed up their hands, enabling the use of more sophisticated tools.
 
 \paragraph{Tool Mastery:}
-The Acheulean tool culture is closely associated with Homo Erectus, featuring large bifacial handaxes and cleavers. These tools represent a significant advancement in technology and skill.
+The Acheulean tool culture is closely associated with Homo erectus, featuring large bifacial handaxes and cleavers. These tools represent a significant advancement in technology and skill.
 
 \paragraph{Control of Fire:}
-Homo Erectus is also credited with the controlled use of fire, a landmark development in human history. This ability provided warmth, protection, and a new way to prepare food.
+Homo erectus is also credited with the controlled use of fire, a landmark development in human history. This ability provided warmth, protection, and a new way to prepare food.
 
 \section*{The Role in Human Evolution}
 
 \paragraph{A Transitional Species:}
-Homo Erectus played a crucial role as a transitional species, bridging the gap between earlier hominins and later, more advanced members of the Homo genus.
+Homo erectus played a crucial role as a transitional species, bridging the gap between earlier hominins and later, more advanced members of the Homo genus.
 
 \paragraph{Setting the Stage:}
 Their advancements in tool use, control of fire, and ability to adapt to varied environments set the stage for the complex behaviors and innovations of subsequent human species.
 
 \section*{Conclusion}
 
-Homo Erectus was a pivotal figure in the story of human evolution, embodying significant advancements in anatomy, behavior, and technology. Their legacy lives on as a testament to the resilience and adaptability of the human lineage, setting the stage for the remarkable journey of evolution that would follow.
+Homo erectus was a pivotal figure in the story of human evolution, embodying significant advancements in anatomy, behavior, and technology. Their legacy lives on as a testament to the resilience and adaptability of the human lineage, setting the stage for the remarkable journey of evolution that would follow.
 
 \chapter{Hominin Migrations and Discoveries}
 \subsection*{Walking the Earth and Leaving Marks}
-The wanderlust of Homo Erectus took them far and wide, making them the first of our ancestors to explore the world to a great extent. It is worthwhile to study the fascinating evidence of their migrations, the lands they conquered, and the traces they left behind for us to discover.
+The wanderlust of Homo erectus took them far and wide, making them the first of our ancestors to explore the world to a great extent. It is worthwhile to study the fascinating evidence of their migrations, the lands they conquered, and the traces they left behind for us to discover.
 
 \section*{The Great Migration}
 
 \paragraph{Out of Africa:}
-Homo Erectus was remarkable in its ability to migrate out of Africa and settle in various parts of the world, including Asia and Europe. This migration began around 1.8 million years ago and marks a significant chapter in the history of human evolution.
+Homo erectus was remarkable in its ability to migrate out of Africa and settle in various parts of the world, including Asia and Europe. This migration began around 1.8 million years ago and marks a significant chapter in the history of human evolution.
 
 \paragraph{Adapting to New Worlds:}
-In every new habitat they encountered, Homo Erectus adapted to the available resources and climate. This adaptability is a testament to their resilience and is a characteristic feature of our lineage.
+In every new habitat they encountered, Homo erectus adapted to the available resources and climate. This adaptability is a testament to their resilience and is a characteristic feature of our lineage.
 
 \section*{Archaeological Discoveries}
 
 \paragraph{Fossil Finds:}
-Fossils of Homo Erectus have been discovered across the globe, from the famous "Java Man" in Indonesia to the "Peking Man" in China. Each discovery adds a piece to the puzzle of our understanding of this species.
+Fossils of Homo erectus have been discovered across the globe, from the famous "Java Man" in Indonesia to the "Peking Man" in China. Each discovery adds a piece to the puzzle of our understanding of this species.
 
 \paragraph{Stone Tools and More:}
-Alongside fossils, archaeologists have unearthed a variety of stone tools associated with Homo Erectus. These tools are more advanced than those of their predecessors, showcasing a developing intellect and mastery of tool-making.
+Alongside fossils, archaeologists have unearthed a variety of stone tools associated with Homo erectus. These tools are more advanced than those of their predecessors, showcasing a developing intellect and mastery of tool-making.
 
 \section*{Impact on Human Evolution}
 
 \paragraph{A Pioneering Species:}
-Homo Erectus paved the way for future generations of humans, setting a precedent for migration, adaptation, and technological innovation. 
+Homo erectus paved the way for future generations of humans, setting a precedent for migration, adaptation, and technological innovation. 
 
 \paragraph{The Legacy Continues:}
-The traces left by Homo Erectus continue to inform our understanding of human evolution, providing invaluable insights into the capabilities and behaviors of our ancient ancestors.
+The traces left by Homo erectus continue to inform our understanding of human evolution, providing invaluable insights into the capabilities and behaviors of our ancient ancestors.
 
 \section*{Conclusion}
 
-The migrations of Homo Erectus represent a monumental chapter in our evolutionary history, characterized by exploration, adaptation, and innovation. The evidence they left behind continues to enlighten us, bridging the gap between past and present and deepening our connection to our ancient lineage.
+The migrations of Homo erectus represent a monumental chapter in our evolutionary history, characterized by exploration, adaptation, and innovation. The evidence they left behind continues to enlighten us, bridging the gap between past and present and deepening our connection to our ancient lineage.
 
 \chapter{Importance in Evolution}
 \subsection*{The Crucial Role of Hominin Homo Erectus in Our Past}
-The evolutionary significance of the Hominin, Homo Erectus, cannot be understated. Here, we will dissect their critical role in the grand events of human evolution, from their survival strategies to their cognitive leaps, painting a vivid picture of their transformative influence.
+The evolutionary significance of the Hominin, Homo erectus, cannot be understated. Here, we will dissect their critical role in the grand events of human evolution, from their survival strategies to their cognitive leaps, painting a vivid picture of their transformative influence.
 
 \section*{Survival and Adaptation}
 
 \paragraph{Mastery of the Environment:}
-Homo Erectus exhibited an unparalleled ability to adapt to diverse environments, from the African savannahs to the colder climates of Europe and Asia. This adaptability was crucial for their survival and expansion.
+Homo erectus exhibited an unparalleled ability to adapt to diverse environments, from the African savannahs to the colder climates of Europe and Asia. This adaptability was crucial for their survival and expansion.
 
 \paragraph{Innovative Strategies:}
 Their survival strategies included the development of complex hunting techniques and the controlled use of fire, which not only provided warmth and protection but also allowed for the cooking of food, enhancing its nutritional value.
@@ -2465,30 +2473,30 @@ Their survival strategies included the development of complex hunting techniques
 \section*{Cognitive Advances}
 
 \paragraph{Growing Brains:}
-Homo Erectus is characterized by a significant increase in brain size compared to their predecessors. This increased brain capacity is believed to have played a key role in their advanced tool use and problem-solving abilities.
+Homo erectus is characterized by a significant increase in brain size compared to their predecessors. This increased brain capacity is believed to have played a key role in their advanced tool use and problem-solving abilities.
 
 \paragraph{Social Complexity:}
-Evidence suggests that Homo Erectus lived in social groups, indicating a level of social organization and cooperation that was more complex than that of earlier hominins.
+Evidence suggests that Homo erectus lived in social groups, indicating a level of social organization and cooperation that was more complex than that of earlier hominins.
 
 \section*{Technological Innovation}
 
 \paragraph{Advanced Tool Use:}
-The Acheulean tool culture associated with Homo Erectus demonstrates a leap in technological innovation, with carefully crafted handaxes and cleavers made from stone.
+The Acheulean tool culture associated with Homo erectus demonstrates a leap in technological innovation, with carefully crafted handaxes and cleavers made from stone.
 
 \paragraph{The Birth of Artistry:}
-There is also speculation that Homo Erectus may have been capable of creating simple forms of art, indicating a developing sense of symbolism and abstract thought.
+There is also speculation that Homo erectus may have been capable of creating simple forms of art, indicating a developing sense of symbolism and abstract thought.
 
 \section*{A Pivotal Role in Evolution}
 
 \paragraph{Setting the Stage:}
-Homo Erectus played a pivotal role in setting the stage for the evolution of later hominins, including Homo Sapiens. Their advancements laid the foundations for the complex behaviors and innovations that characterize modern humans.
+Homo erectus played a pivotal role in setting the stage for the evolution of later hominins, including Homo sapiens. Their advancements laid the foundations for the complex behaviors and innovations that characterize modern humans.
 
 \paragraph{A Lasting Legacy:}
-The legacy of Homo Erectus continues to be felt today as we uncover more about their lives and their contributions to the evolutionary journey of our species.
+The legacy of Homo erectus continues to be felt today as we uncover more about their lives and their contributions to the evolutionary journey of our species.
 
 \section*{Conclusion}
 
-Homo Erectus stands out as one of the most important players in human evolution, exemplifying adaptability, innovation, and the capacity for cognitive advancement. Their story is a crucial chapter in understanding where we come from and how we became the complex, intelligent beings we are today.
+Homo erectus stands out as one of the most important players in human evolution, exemplifying adaptability, innovation, and the capacity for cognitive advancement. Their story is a crucial chapter in understanding where we come from and how we became the complex, intelligent beings we are today.
 
 \chapter{The Neanderthals}
 \subsection*{Our Closest Extinct Relatives}
@@ -2540,7 +2548,7 @@ The narrative of Neanderthals and Homo sapiens is not just about differences but
 Neanderthals and Homo sapiens coexisted in Europe and parts of Asia for thousands of years. The exact nature of their interactions is still under investigation, but it is clear that there were periods of both competition and cooperation.
 
 \paragraph{Genetic Exchange:}
-DNA evidence shows that Neanderthals and Homo sapiens interbred, with modern non-African humans carrying up to 2% Neanderthal DNA. This genetic exchange is a tangible reminder of our shared history.
+DNA evidence shows that Neanderthals and Homo sapiens interbred, with modern non-African humans carrying up to 2 percent Neanderthal DNA. This genetic exchange is a tangible reminder of our shared history.
 
 \section*{Learning and Influence}
 
@@ -2604,7 +2612,7 @@ Neanderthals were well-adapted to cold climates, but rapid environmental changes
 Evidence of inbreeding and disease in Neanderthal populations suggests that these factors may have played a role in their extinction. Small population sizes would have made them more vulnerable to these issues.
 
 \paragraph{Genetic Contributions:}
-Despite their extinction, Neanderthals have left a genetic legacy in modern humans. Up to 2% of the DNA of non-African modern humans comes from Neanderthals, a testament to the interactions between our species.
+Despite their extinction, Neanderthals have left a genetic legacy in modern humans. Up to 2 percent of the DNA of non-African modern humans comes from Neanderthals, a testament to the interactions between our species.
 
 \section*{Conclusion}
 
@@ -2730,7 +2738,7 @@ Today, researchers and scholars continue to delve into this remarkable period, s
 
 The Homo Sapien Cognitive Revolution was a watershed moment in the story of our species. It endowed us with exceptional abilities of thought, communication, and societal organization, setting us on a path of innovation and complex development. This leap in cognitive abilities has defined us as a species, distinguishing us in the realm of life and shaping our history.
 
-\chapter{Early Art, Culture, and Social Structures}
+\chapter{Early Art, Culture, and Society}
 \subsection*{The Rich Structure of Early Homo Sapiens Life}
 Beyond mere survival, Homo sapiens sought meaning, expression, and connection. Explore the blossoming of early art, the birth of diverse cultures, and the intricate social structures that became the bedrock of human societies.
 
@@ -2761,7 +2769,7 @@ The emergence of leaders and governance structures was a crucial step in human d
 \section*{Innovation in Tools and Technology}
 
 \paragraph{Tools for Art and Life:}
-The period saw significant advancements in tool-making, creating more precise and specialized tools for art, hunting, and daily life.
+This period saw significant advancements in tool-making, creating more precise and specialized tools for art, hunting, and daily life.
 
 \paragraph{The Impact on Society:}
 These technological innovations profoundly impacted early human societies, enabling more efficient resource utilization, increased food production, and, ultimately, the ability to support larger populations.
@@ -2909,6 +2917,15 @@ The Roman Empire was renowned for its military strength, conquering vast territo
 
 \paragraph{Law and Governance:}
 Roman law and governance systems were incredibly advanced for their time and have had a lasting impact on legal and political systems worldwide. The concept of a republic, checks, and balances in governance, and the codification of laws were all innovations of the Roman era.
+
+\paragraph{The Division of the Empire:}
+In AD 395, the Roman Empire was divided into the Western Roman Empire and the Eastern Roman Empire, also known as Byzantium, with its capital in Constantinople (modern-day Istanbul).
+
+\paragraph{Byzantium’s Endurance:}
+While the Western Roman Empire fell in AD 476, Byzantium endured for nearly another millennium, serving as a bastion of classical knowledge and Christian faith.
+
+\paragraph{The Fall of Constantinople:}
+In 1453, Constantinople fell to the Ottoman Turks, marking the end of the Byzantine Empire. This event played a significant role in the shift of power and culture in the region. Following the fall of Byzantium, the Ottoman Empire emerged as a major power, with Istanbul at its heart, continuing the city’s legacy as a cultural and economic hub.
 
 \section*{Conclusion}
 
@@ -3337,7 +3354,7 @@ The Renaissance was a unique moment in time, characterized by an unprecedented s
 
 \chapter{Shakespeare and Elizabethan England}
 \subsection*{An Era of Literary Genius}
-Shakespeare's works were greatly influenced by the world in which he lived, the era of Elizabethan England. This chapter deep-dives into the history of Elizabethan England and how it shaped Shakespeare and his famous writings and theater. Important dates include Shakespeare's birth on April 23, 1564, and the Elizabethan era, which spanned from 1558 to 1603.
+Shakespeare's works were greatly influenced by the world in which he lived, the era of Elizabethan England. This chapter looks into the history of Elizabethan England and how it shaped Shakespeare and his famous writings and theater. Important dates include Shakespeare's birth on April 23, 1564, and the Elizabethan era, which spanned from 1558 to 1603.
 
 \section*{Introduction}
 
@@ -3537,7 +3554,7 @@ In conclusion, this section considers the long-term effects of the Industrial Re
 
 \chapter{Urbanization and Modern Business}
 \subsection*{New Ways of Living and Doing Business}
-As factories rose, so did cities. Dive into the story of rapid urbanization, the rise of a new economic order, and the challenges and opportunities a free market system for business brought to the fore.
+As factories rose, so did cities. It is worthwhile to think about the consequences of rapid urbanization, the rise of a new economic order, and the challenges and opportunities a free market system for business brought to the fore.
 
 \section*{Introduction}
 
@@ -3639,7 +3656,7 @@ The end of World War II marked the beginning of the Cold War, a prolonged period
 \paragraph{}
 The World Wars were periods of intense conflict that reshaped the world in profound ways. Through this exploration, we gain a deeper understanding of the causes, the brutal reality of war, and the enduring impacts of these global confrontations on modern society.
 
-\chapter{The Cold War and the Fall of the Soviet Union}
+\chapter{The Cold War and the Fall of the USSR}
 \subsection*{New World Orders}
 
 \section*{Introduction}
@@ -3950,7 +3967,7 @@ Congratulations! You have taken your first steps into the world of \LaTeX. With 
 \bibliography{references} % Assuming you have a references.bib file
 
 % --- Index ---
-\addcontentsline{toc}{chapter}{Index}
-\printindex
+% \addcontentsline{toc}{chapter}{Index}
+% \printindex
 
 \end{document}

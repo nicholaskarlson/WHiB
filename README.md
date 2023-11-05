@@ -35,3 +35,5 @@ Feel free to open an issue for any suggestions, corrections, or contributions. Y
 ## Edit and Compile WHiB for Free
 To Edit and Compile WHiB:
 Overleaf.com Free Account can be used (create a new blank project in Overleaf and then upload all “tex” files and the one “bib” file), and then compile to PDF in Overleaf.
+
+![WHiB on Overleaf](https://github.com/nicholaskarlson/WHiB/blob/main/WHiB-on-Overleaf.png "WHiB on Overleaf")

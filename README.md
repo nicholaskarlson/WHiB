@@ -4,7 +4,7 @@
 
 ## About
 
-World History in Brief (WHiB) is an endeavor to reshape how history is written and understood. It's not just a passive read but an open-source approach to history, aiming to be inclusive and diverse.
+World History in Brief (WHiB) is a project to reshape how history is written. It's not just a passive read but an open-source approach to history.
 
 This project strives to break the traditional mold of history writing and invites readers and historians alike to participate actively.
 

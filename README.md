@@ -10,6 +10,17 @@ This project strives to break the traditional mold of history writing and invite
 
 Please see below regarding how to edit and compile your version of the book (WHiB) for free.
 
+## How to View or Download the Book
+
+The book is on the GitHub site as `main.pdf` (click on the file name listed on the project site).
+
+Also, the book can be viewed or downloaded at the following link:
+
+[View or Download the Book](https://drive.google.com/file/d/1DCEwt7OZRsnfb_ZBhbEipPLuAFfjKDUS/view)
+
+It may take a few seconds for the book to load in your browser window.
+
+
 ## Features
 
 - Open-source: Allowing for continuous updates and improvements.
